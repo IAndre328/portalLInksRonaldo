@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+h2{
+    font-size: 2.5rem;
+}
+:root{
+    --cortexto: rgb(0, 0, 0);
+    --corfundo:rgb(209, 209, 209);
+    --corbotao1:rgb(100, 255, 100);
+}
+
+/*atalhos*/
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(105, 105, 105);
+    padding: 15px;
+}
+
+.navbar h1 {
+    margin-right: auto;
+}
+.navbar ul{
+    position: relative;
+    right: 10%;
+    gap: 15px;
+    list-style: none;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--cortexto);
+}
+.navbar h1:hover, .navbar ul:hover{
+   opacity: 0.5;
+}
+.navbar h1:hover, a:hover{
+    opacity: 1;
+    cursor: pointer;
+    color: var(--corfundo);
+}
+
+/*artigos*/
+section{
+    margin-bottom: 7px; 
+}
+section div{
+    display: flex;
+    justify-content: center;
+}
+img{
+   width: 100%;
+   aspect-ratio: 3/2;
+}
+  
+div article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    padding: 10px;
+    max-width: 400px;
+    min-width: 200px;
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 5px;
+  }
+  
+section p{
+    margin-bottom: 20px;
+}
+
+/*botão ler mais*/
+.lermais{
+    padding: 7px;
+    background-color: var(--corbotao1);
+    width: 60px;
+    border-radius: 5px;
+    margin-top: auto;
+}
