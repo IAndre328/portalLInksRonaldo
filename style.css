@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    transition: all 0.3s;
 }
 h2{
     font-size: 2.5rem;
-    margin: 5px auto 10px;
+    margin: 5px auto 5px;
 }
 :root{
-    --corbody:#eee;
+    --corbody:rgb(92, 238, 79);
     --cortexto: rgb(0, 0, 0);
     --cortexto2:rgb(233, 233, 233);
     --cornav:  rgb(78, 78, 78);
@@ -17,6 +16,7 @@ h2{
     --corbotao2:rgb(0, 184, 0);
 }
 body{
+    width: 100vw;
     background-color: var(--corbody);
 }
 /*atalhos*/
@@ -27,6 +27,7 @@ body{
 
 /*navbar*/
 .navbar {
+    width: 100vw;
     display: flex;
     align-items: center;
     background-color:  var(--cornav);
@@ -36,11 +37,15 @@ body{
 }
 
 .navbar h1 {
+    position: relative;
+    left: 10%;
     margin-right: auto;
 }
 .navbar ul{
+    display: flex;
+    flex-direction: row;
     position: relative;
-    right: 10%;
+    right: 30%;
     gap: 15px;
     list-style: none;
 }
@@ -55,12 +60,13 @@ a{
 .navbar h1:hover, .navbar li:hover{
    opacity: 0.5;
    cursor: pointer;
+   border-bottom: solid 2px var(--cortexto2);
 }
 
 
 /*artigos*/
 section{
-    margin-bottom: 7px; 
+    margin: 7px 10% 7px 10%;
 }
 section div{
     display: flex;
@@ -76,9 +82,9 @@ div article {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: 25vw;
     padding: 15px;
-    max-width: 400px;
+    max-width: 350px;
     min-width: 200px;
     width: 30%;
     margin: 10px;
@@ -95,6 +101,7 @@ section p{
 
 /*botão ler mais*/
 .lermais{
+    transition: all 0.3s;
     padding: 7px;
     width: 60px;
     border-radius: 5px;
@@ -104,4 +111,16 @@ section p{
 .lermais:hover{
     background-color: var(--corbotao2);
     color: var(--corfundo);
+}
+
+
+
+@media (max-width:850px) {
+    .row{
+        display: grid;
+        place-items: center;
+    }
+    div article {
+        width: 35vw;
+    }
 }
