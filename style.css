@@ -3,14 +3,17 @@
     padding: 0;
 }
 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
     font-size: 2.5rem;
     margin: 5px auto 5px;
 }
 :root{
-    --corbody:rgb(92, 238, 79);
+    --corbody:rgb(114, 114, 114);
     --cortexto: rgb(0, 0, 0);
     --cortexto2:rgb(233, 233, 233);
-    --cornav:  rgb(78, 78, 78);
+    --cornav:  rgb(58, 161, 58);
     --corfundo:rgb(233, 233, 233);
     --corbotao1:rgb(100, 255, 100);
     --corbotao2:rgb(0, 184, 0);
@@ -106,7 +109,7 @@ section p{
     width: 60px;
     border-radius: 5px;
     margin-top: auto;
-    background-color: var(--corbotao1);
+    border: solid black 1px;
 }
 .lermais:hover{
     background-color: var(--corbotao2);
