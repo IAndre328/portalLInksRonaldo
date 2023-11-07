@@ -5,6 +5,8 @@ function newNavbar(){
    let oldNav = document.querySelector("nav");
     oldNav.innerHTML = '';
     console.log(oldUL)
+    
+    oldNav.classList.add("sidebar");
 }
 
 if (tamanhoTela < 850) newNavbar();
